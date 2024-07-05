@@ -4,5 +4,5 @@ project(RubikCubeSolver)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(RubikCubeSolver main.cpp
-        GenericCube.cpp
-        GenericCube.h)
+        RubiksCube.cpp
+        RubikCube.h)
