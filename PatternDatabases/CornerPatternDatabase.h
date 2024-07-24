@@ -1,6 +1,3 @@
-//
-// Created by abhin on 05-07-2024.
-//
 
 
 #ifndef RUBIKS_CUBE_SOLVER_CORNERPATTERNDATABASE_H
@@ -26,6 +23,3 @@ public:
 
 
 #endif //RUBIKS_CUBE_SOLVER_CORNERPATTERNDATABASE_H
-
-
-

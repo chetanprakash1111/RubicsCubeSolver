@@ -1,6 +1,4 @@
-//
-// Created by abhin on 05-07-2024.
-//
+
 
 #include<bits/stdc++.h>
 #include "../Model/RubiksCube.h"
