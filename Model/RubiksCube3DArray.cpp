@@ -1,8 +1,3 @@
-//
-// Created by abhin on 05-07-2024.
-//
-
-
 #include "RubiksCube.h"
 
 class RubiksCube3dArray : public RubiksCube {

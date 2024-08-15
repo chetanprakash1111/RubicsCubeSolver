@@ -7,8 +7,6 @@ add_executable(RubikCubeSolver main.cpp
         Model/RubiksCube.cpp
         Model/RubiksCube.h
         Model/RubiksCube3DArray.cpp
-        Model/RubiksCube1DArray.cpp
-        Model/RubiksCubeBitboard.cpp
         Solver/DFSSolver.h
         Solver/BFSSolver.h
         Solver/IDAstarSolver.h
@@ -25,4 +23,5 @@ add_executable(RubikCubeSolver main.cpp
         PatternDatabases/PermutationIndexer.h
         PatternDatabases/math.cpp
         PatternDatabases/math.h
-        main.cpp)
+        main.cpp
+)

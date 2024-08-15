@@ -1,8 +1,8 @@
 
 #include <bits/stdc++.h>
-#include "Model/RubiksCube3dArray.cpp"
-#include "Model/RubiksCube1dArray.cpp"
-//#include "Model/RubiksCubeBitboard.cpp"
+//#include "Model/RubiksCube3dArray.cpp"
+//#include "Model/RubiksCube1dArray.cpp"
+
 #include "Solver/DFSSolver.h"
 #include "Solver/BFSSolver.h"
 #include "Solver/IDDFSSolver.h"
@@ -15,7 +15,7 @@ using namespace std;
 int main() {
 //    RubiksCube3dArray object3DArray;
 //    RubiksCube1dArray object1dArray;
-//    RubiksCubeBitboard objectBitboard;
+//    RubiksCube3dArray objectBitboard;
 //
 //    object3DArray.print();
 //
@@ -132,14 +132,12 @@ int main() {
 
     // Create two Cubes ------------------------------------------------------------------------------------------
 
-//    RubiksCube3dArray cube1;
-//    RubiksCube3dArray cube2;
 
 //    RubiksCube1dArray cube1;
 //    RubiksCube1dArray cube2;
 
-//    RubiksCubeBitboard cube1;
-//    RubiksCubeBitboard cube2;
+//    RubiksCube3dArray cube1;
+//    RubiksCube3dArray cube2;
 
 
 //  Equality and assignment of cubes --------------------------------------------------------------------------
@@ -165,7 +163,6 @@ int main() {
 
 //    unordered_map<RubiksCube1dArray, bool, Hash1d> mp1;
 
-//    unordered_map<RubiksCubeBitboard, bool, HashBitboard> mp1;
 //
 //    mp1[cube1] = true;
 //    cube2.randomShuffleCube(8);
@@ -194,7 +191,7 @@ int main() {
 
 
 //BFS Solver -----------------------------------------------------------------------------------------------------
-//    RubiksCubeBitboard cube;
+//    RubiksCube3dArray cube;
 //    cube.print();
 //
 //    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
@@ -202,7 +199,7 @@ int main() {
 //    cout << "\n";
 //    cube.print();
 //
-//    BFSSolver<RubiksCubeBitboard, HashBitboard> bfsSolver(cube);
+//    BFSSolver<RubiksCube3dArray, Hash3d> bfsSolver(cube);
 //    vector<RubiksCube::MOVE> solve_moves = bfsSolver.solve();
 //
 //    for(auto move: solve_moves) cout << cube.getMove(move) << " ";
@@ -210,7 +207,7 @@ int main() {
 //    bfsSolver.rubiksCube.print();
 
 // IDDFS Solver ----------------------------------------------------------------------------------------------------
-//    RubiksCubeBitboard cube;
+//    RubiksCube3dArray cube;
 //    cube.print();
 //
 //    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(7);
@@ -218,7 +215,7 @@ int main() {
 //    cout << "\n";
 //    cube.print();
 //
-//    IDDFSSolver<RubiksCubeBitboard, HashBitboard> iddfsSolver(cube, 7);
+//    IDDFSSolver<RubiksCube3dArray, Hash3d> iddfsSolver(cube, 7);
 //    vector<RubiksCube::MOVE> solve_moves = iddfsSolver.solve();
 //
 //    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
@@ -226,7 +223,7 @@ int main() {
 //    iddfsSolver.rubiksCube.print();
 
 // IDA* SOLVER ---------------------------------------------------------------------------------------------------
-//    RubiksCubeBitboard cube;
+//    RubiksCube3dArray cube;
 //    cube.print();
 //
 //    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(5);
@@ -234,7 +231,7 @@ int main() {
 //    cout << "\n";
 //    cube.print();
 //
-//    IDAstarSolver<RubiksCubeBitboard, HashBitboard> idAstarSolver(cube);
+//    IDAstarSolver<RubiksCube3dArray, HashBitboard> idAstarSolver(cube);
 //    vector<RubiksCube::MOVE> solve_moves = idAstarSolver.solve();
 //    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
 //    cout << "\n";
@@ -243,7 +240,7 @@ int main() {
 // CornerPatternDatabase Testing ---------------------------------------------------------------------------------
 
 //    CornerPatternDatabase cornerDB;
-//    RubiksCubeBitboard cube;
+//    RubiksCube3dArray cube;
 //    cube.print();
 //
 //    cout << (int)cornerDB.getNumMoves(cube) << "\n";
@@ -269,7 +266,7 @@ int main() {
 //    dbMaker.bfsAndStore();
 
     RubiksCube3dArray cube;
-    auto shuffleMoves = cube.randomShuffleCube(13);
+    auto shuffleMoves = cube.randomShuffleCube(5);
     cube.print();
     for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
     cout << "\n";
