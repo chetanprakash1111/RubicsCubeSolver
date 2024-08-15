@@ -15,7 +15,6 @@ using namespace std;
 int main() {
 //    RubiksCube3dArray object3DArray;
 
-//
 //    object3DArray.print();
 //
 //    if (object3DArray.isSolved()) cout << "SOLVED\n\n";
